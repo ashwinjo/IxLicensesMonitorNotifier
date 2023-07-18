@@ -45,7 +45,7 @@ def licenseChecker(records=None):
                                                expiring_in_30_days, expiring_in_60_days, 
                                                already_expired])
 
-    send_email(message =  '\n'.join(messages_list))
+    send_email(message =  '<br/>'.join(messages_list))
 
 def tabulate_results_as_string_message(list_of_expiry):
     
@@ -57,7 +57,7 @@ def tabulate_results_as_string_message(list_of_expiry):
      4:"==== Expired ===="}
     for idx, exp in enumerate(list_of_expiry):
         table_string = tabulate(exp, headers=['chassisIP', "activationCode", "quantity", "description", "expiryDate","isExpired"], tablefmt="html")
-        t = "\n\n" + m[idx] + "\n\n" + table_string + "\n\n"
+        t = "<br/>" + m[idx] + "<br/>" + table_string + "<br/>"
         messages_list.append(t)
     return messages_list
     
