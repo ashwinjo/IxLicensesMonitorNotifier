@@ -12,4 +12,4 @@ FOOTER = "<br/><br/>In case of any questions please reach out to your Keysight S
 SMPT_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 EMAIL_USERNAME = 'ashwinjosh@gmail.com'
-EMAIL_PASSWORD = 'lazvbbitwguhtfns'
+EMAIL_PASSWORD = 'XXXX'

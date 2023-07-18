@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 from tabulate import tabulate
 from sendEmail import send_email
 import config
+import time
 import IxOSRestAPICaller as ixOSRestCaller
 from RestApi.IxOSRestInterface import IxRestSession
 
@@ -90,5 +91,9 @@ def get_chassis_licensing_data():
                 list_of_licenses.append(a)
     licenseChecker(records = list_of_licenses)
 
-if __name__ == "__main__":
-    get_chassis_licensing_data()
+if __name__ == '__main__':
+    while True:
+        get_chassis_licensing_data()
+        seconds = config.POLLING_INTERAL_IN_DAYS * 24 * 60 * 60  # Convert days to seconds
+        time.sleep(seconds)
+        

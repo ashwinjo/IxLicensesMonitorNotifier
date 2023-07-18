@@ -13,6 +13,7 @@ How to use the tool
 -  Git clone `https://github.com/ashwinjo/IxLicensesMonitorNotifier.git`  repository onto your local machine
 -  Modify email_config.py file and enter your SMTP credentials
 -  Modify config.py file and enter ixia chassis / username / password.
+-  Modify config.py file to enter Polling Interval for report generation.
 -  Run `pip install -r requirements.txt`
 -  Run the python scipt as below.
 
@@ -25,6 +26,8 @@ Polling for async operation ...
 Completed async operation
 Polling for async operation ...
 Completed async operation
-Email sent successfully!```
+Email sent successfully!
+```
 
 
+<img width="1425" alt="image" src="https://github.com/ashwinjo/IxLicensesMonitorNotifier/assets/120066169/00f3af8d-2b6e-4c93-b1d7-7ca571578a75">

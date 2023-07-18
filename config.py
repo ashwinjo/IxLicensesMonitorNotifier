@@ -2,5 +2,7 @@ CHASSIS_LIST = [
 {
     "ip": "10.36.236.121",
     "username": "admin",
-    "password": "Kimchi123Kimchi123!",
+    "password": "XXXX!",
 }]
+
+POLLING_INTERAL_IN_DAYS = 30
