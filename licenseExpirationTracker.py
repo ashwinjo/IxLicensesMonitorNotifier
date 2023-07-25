@@ -54,7 +54,7 @@ def tabulate_results_as_string_message(list_of_expiry):
     m = {0: "==== Expiring in 7 - 14 days ====", 
      1: "==== Expiring in 15 - 29 days ====" , 
      2: "==== Expiring in 30 - 59 days ====", 
-     3: "==== Expiring in 60 - 90 days ====", 
+     3: "==== Expiring in 60 - 180 days ====", 
      4:"==== Expired ===="}
     for idx, exp in enumerate(list_of_expiry):
         table_string = tabulate(exp, headers=['chassisIP', "activationCode", "quantity", "description", "expiryDate","isExpired"], tablefmt="html")
